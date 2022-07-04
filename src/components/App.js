@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import TeamModal from "./TeamModal";
 import players from "../data/players";
+import Player from "./Player";
 
 const App = () => {
   const [modalOpen, setModalOpen] = useState(false);
@@ -8,27 +9,31 @@ const App = () => {
   return (
     <div className="app">
       <header className="header">
-        /* PLACEHOLDER: Replace me with the code found in the setup step of the
-        document given to you by your interviewer */
+        <div className="heading1">Squad</div>{" "}
+        <div className="heading2">
+          {" "}
+          <span>Selected players: </span> <span>0</span>
+        </div>
+        <div>
+          {" "}
+          <div className="button button--link">
+            {" "}
+            Select 10 random players{" "}
+          </div>{" "}
+          <div className="button button--link">Select all players</div>{" "}
+          <div className="button button--link">Unselect all players</div>
+        </div>
+        <button
+          onClick={() => setModalOpen(true)}
+          className="button button--primary"
+        >
+          {" "}
+          Generate teams
+        </button>
       </header>
 
       <div className="player-list">
-        {players.map((player) => {
-          return (
-            <div key={player.id} className="player" data-id={player.id}>
-              <div>
-                <img
-                  src={`https://avatars.dicebear.com/api/avataaars/${player.id}.svg?w=100`}
-                />
-                <div>{player.name}</div>
-              </div>
-              <div className="player__selection">
-                <input id={player.id} type="checkbox" />
-                <div>select</div>
-              </div>
-            </div>
-          );
-        })}
+        {players.map((player, index) => <Player player={player} key={index}/>)}
       </div>
 
       <TeamModal
