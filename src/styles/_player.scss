@@ -24,16 +24,12 @@
 .player {
   /* Mobile UI not implemented */
 
-  @include media-breakpoint-up(sm) {
-    /* Desktop UI not implemented - Desktop is considered >= 576px */
-  }
-
   img {
     border-radius: 50%;
     box-shadow: $box-shadow;
-    margin-top: -3rem;
-    margin-bottom: 10px;
-    background: white;
+    margin-left: -2rem;
+    margin-right: 1rem;
+    height: $player-picture-size;
   }
 
   &__selection {
@@ -49,22 +45,41 @@
       justify-content: center;
     }
   }
-  margin: 80px 10px 0;
+
   box-shadow: $box-shadow;
-  width: 160px;
-  height: 160px;
+  width: 75%;
+  height: 40px;
   display: flex;
+  margin-bottom: 3rem;
+  margin-left: 1rem;
   justify-content: space-between;
-  flex-direction: column;
 
   &__details {
     display: flex;
-    flex-direction: column;
     align-items: center;
-    height: $player-picture-size-lg
   }
 
-  
+  @include media-breakpoint-up(sm) {
+    /* Desktop UI not implemented - Desktop is considered >= 576px */
+
+    width: 160px;
+    height: 120px;
+    margin: 80px 10px 0;
+    flex-direction: column;
+
+    img {
+      margin: 0;
+      margin-top: -3rem;
+      margin-bottom: 10px;
+      background: white;
+      height: $player-picture-size-lg
+    }
+    
+    &__details {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
 }
 
 .player-list {
