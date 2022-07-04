@@ -1,0 +1,10 @@
+.header {
+  background-image: linear-gradient(
+    $bg-color-primary calc(100% - 29px),
+    rgba(0, 0, 0, 0.2) calc(100% - 28px),
+    transparent calc(100% - 25px)
+  );
+  color: $bg-color-primary-contrast;
+  margin: 0 0 1em 0;
+  text-align: center;
+}

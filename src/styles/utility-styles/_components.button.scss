@@ -1,0 +1,36 @@
+.button {
+  border: none;
+  border-radius: 3px;
+  box-shadow: 0 2px 5px 0 #a2a2a2;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 1em;
+  font-weight: bold;
+  padding: 1em;
+  margin: 0 0.3em 0.3em;
+  text-transform: uppercase;
+}
+
+.button--primary {
+  background-color: $primary-color;
+  color: $primary-color-contrast;
+}
+
+.button--secondary {
+  background-color: $secondary-color;
+  color: $secondary-color-contrast;
+}
+
+.button--link {
+  background-color: transparent;
+  box-shadow: none;
+  color: $bg-color-primary-contrast;
+  text-decoration: underline;
+  text-transform: none;
+}
+
+.button--light {
+  background-color: transparent;
+  box-shadow: none;
+  text-transform: none;
+}

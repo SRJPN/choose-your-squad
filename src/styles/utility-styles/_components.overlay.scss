@@ -1,0 +1,10 @@
+.overlay {
+  @include position(fixed, 0 0 0 0);
+  animation: fade-in 0.3s ease-in-out;
+  background-color: black;
+  display: none;
+  .is-modal-open & {
+    display: block;
+    opacity: 0.4;
+  }
+}

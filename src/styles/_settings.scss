@@ -1,0 +1,19 @@
+$text-color: #333;
+
+$primary-color: #fee859;
+$primary-color-contrast: $text-color;
+$secondary-color: #b1ba1b;
+$secondary-color-contrast: white;
+
+$bg-color-primary: $secondary-color;
+$bg-color-primary-contrast: white;
+$bg-color-secondary: lighten($secondary-color, 53);
+$bg-color-secondary-contrast: $text-color;
+$bg-color-tertiary: white;
+
+$border-color: #e2e2e2;
+$border-radius: 3px;
+$box-shadow: 1px 2px 8px 0px #d4d4d4;
+
+$player-picture-size: 60px;
+$player-picture-size-lg: 80px;

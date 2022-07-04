@@ -1,0 +1,37 @@
+html {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  line-height: 1.15;
+}
+
+body {
+  background-color: $bg-color-tertiary;
+  color: $text-color;
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+}
+
+.heading1 {
+  font-size: 2em;
+  margin: 0;
+  padding: 0.3em 0 0;
+  font-weight: bold;
+}
+
+.heading2 {
+  font-size: 1.5em;
+  font-weight: normal;
+  margin: 0.5em 0 0;
+}
+
+input,
+label {
+  cursor: pointer;
+}
+
+p {
+  margin-top: 0;
+}
+
+img {
+  border-style: none;
+}
