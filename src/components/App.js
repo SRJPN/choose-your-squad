@@ -3,14 +3,13 @@ import TeamModal from "./TeamModal";
 import players from "../data/players";
 
 const App = () => {
-
-  const [modalOpen, setModalOpen] = useState(false)
+  const [modalOpen, setModalOpen] = useState(false);
 
   return (
     <div className="app">
       <header className="header">
-          /* PLACEHOLDER: Replace me with the code found in the setup step of
-          the document given to you by your interviewer */
+        /* PLACEHOLDER: Replace me with the code found in the setup step of the
+        document given to you by your interviewer */
       </header>
 
       <div className="player-list">
@@ -40,6 +39,6 @@ const App = () => {
       />
     </div>
   );
-}
+};
 
 export default App;
